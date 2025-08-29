@@ -2,53 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dynamic Time-Based Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 100px;
-            transition: background-color 0.5s ease;
-        }
-        h1 {
-            font-size: 2em;
-        }
-        p {
-            font-size: 1.2em;
-        }
-    </style>
+    <title>A Basic HTML Page</title>
 </head>
 <body>
-    <h1>Welcome to my dynamic webpage!</h1>
+    <h1>Hello, World!</h1>
     <p><strong>Name:</strong> Hayden Laube</p>
     <p><strong>Course:</strong> COP4813</p>
     <p><strong>Major:</strong> Computer Science</p>
-
-    <script>
-        function setBackgroundByTime() {
-            const hour = new Date().getHours();
-            let color = "";
-
-            if (hour >= 6 && hour < 12) {
-                // Morning
-                color = "#FFFAE3"; // Light yellow
-            } else if (hour >= 12 && hour < 18) {
-                // Afternoon
-                color = "#E3F2FD"; // Light blue
-            } else if (hour >= 18 && hour < 21) {
-                // Evening
-                color = "#FFE0B2"; // Warm orange
-            } else {
-                // Night
-                color = "#263238"; // Dark gray-blue
-                document.body.style.color = "white"; // Text visible at night
-            }
-
-            document.body.style.backgroundColor = color;
-        }
-
-        // Run on page load
-        setBackgroundByTime();
-    </script>
 </body>
 </html>
